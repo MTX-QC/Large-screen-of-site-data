@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧工地可视化大数据监控平台--空间环境</title>
+    <!-- 引入fonts字体图标样式文件 -->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/space.css">
+
+</head>
+
+<body>
+    <!-- 页面头部区域 -->
+    <div class="header">
+        <div class="title">智慧工地可视化大数据监控平台</div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">综合监控</a></li>
+                <li><a href="energy.html">能耗监控</a></li>
+                <li class="on"><a href="space.html">空间环境</a></li>
+            </ul>
+        </div>
+        <div class="fun-block">
+            <div class="date showTime"></div>
+            <div class="tq">
+                <div class="iconfont">&#xe678;</div>
+                <div class="number">
+                    <span> 25-30℃</span>
+                    <span> 多云</span>
+                </div>
+            </div>
+            <div class="recovery">
+                <div class="iconfont">&#xe676;</div>
+                <div class="huifu">
+                    恢复
+                </div>
+            </div>
+            <div class="configure">
+                <div class="iconfont">&#xe630;</div>
+                <div class="huifu">
+                    配置
+                </div>
+            </div>
+            <div class="quit">
+                <div class="iconfont">&#xe636;</div>
+                <div class="huifu">
+                    退出
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面内容区域 -->
+    <div class="main">
+        <!-- 左板块 -->
+        <div class="column">
+            <!-- 综合天气监控 -->
+            <div class="panel weather">
+                <div class="today-weather">
+                    <div class="left">
+                        <i class="iconfont">&#xe800;</i>
+                        <h3>晴天</h3>
+                        <p>7月1日</p>
+                    </div>
+                    <div class="right">
+                        <p>温度:<span>23-35℃</span></p>
+                        <p>湿度:<span>80%</span></p>
+                        <p>风速:<span>10m/s</span></p>
+                        <p>PM2.5:<span>20ug/m³</span></p>
+                        <p>空气质量:<span>较差</span></p>
+                    </div>
+                </div>
+                <div class="future-weather">
+                    <ul>
+                        <li>
+                            <div class="left">
+                                <i class="iconfont">&#xe800;</i>
+                                <h3>晴天</h3>
+                                <p>7月1日</p>
+                            </div>
+                            <div class="right">
+                                <p>温度:<span>23-35℃</span></p>
+                                <p>湿度:<span>80%</span></p>
+                                <p>风速:<span>10m/s</span></p>
+                                <p>PM2.5:<span>20ug/m³</span></p>
+                                <p>空气质量:<span>较差</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <i class="iconfont">&#xe678;</i>
+                                <h3>多云</h3>
+                                <p>7月2日</p>
+                            </div>
+                            <div class="right">
+                                <p>温度:<span>20-30℃</span></p>
+                                <p>湿度:<span>80%</span></p>
+                                <p>风速:<span>8m/s</span></p>
+                                <p>PM2.5:<span>18ug/m³</span></p>
+                                <p>空气质量:<span>较差</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <i class="iconfont">&#xe708;</i>
+                                <h3>雨</h3>
+                                <p>7月3日</p>
+                            </div>
+                            <div class="right">
+                                <p>温度:<span>20-25℃</span></p>
+                                <p>湿度:<span>80%</span></p>
+                                <p>风速:<span>9m/s</span></p>
+                                <p>PM2.5:<span>15ug/m³</span></p>
+                                <p>空气质量:<span>较好</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <i class="iconfont">&#xe800;</i>
+                                <h3>晴天</h3>
+                                <p>7月4日</p>
+                            </div>
+                            <div class="right">
+                                <p>温度:<span>23-35℃</span></p>
+                                <p>湿度:<span>80%</span></p>
+                                <p>风速:<span>10m/s</span></p>
+                                <p>PM2.5:<span>20ug/m³</span></p>
+                                <p>空气质量:<span>较差</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 温度与湿度信息 -->
+            <div class="panels security">
+                <div class="left panel">
+                    <h3>温度信息（℃） </h3>
+                    <div class="info-list" id="temperature"></div>
+                    <div class="panel-footer"></div>
+                </div>
+
+                <div class="right panel">
+                    <h3>湿度信息（%） </h3>
+                    <div class="info-list" id="humidity"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右板块 -->
+        <div class="column">
+            <!-- 环境质量 -->
+            <div class="panel environment">
+                <h3>环境质量</h3>
+                <div class="title">
+                    <ul>
+                        <li>
+                            <div>检测点</div>
+                            <div>温度（℃）</div>
+                            <div>PM2.5</div>
+                            <div>湿度（%）</div>
+                            <div>噪音（dB）</div>
+                            <div>风速（m/s）</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-list marquee-view">
+                    <ul class="marquee">
+                        <li>
+                            <div>检测点1</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点2</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点3</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点4</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点5</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点6</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点7</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点8</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点9</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- PM2.5信息 -->
+            <div class="panel">
+                <h3>PM2.5信息(ug/m³)</h3>
+                <div class="info-list" id="PM"> </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 风速情况 -->
+            <div class="panel">
+                <h3>风速情况（m/s）</h3>
+                <div class="info-list" id="illumination"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面适配插件 -->
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/space.js"></script>
+</body>
+
+</html>

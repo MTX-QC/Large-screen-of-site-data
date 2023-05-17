@@ -1,0 +1,187 @@
+.main {
+    .panel {
+        height: 3.35rem !important;
+
+        .info-list {
+            height: 2.2rem !important;
+        }
+    }
+
+    .column:first-child {
+        flex: 2;
+
+        >div:first-child {
+            height: 6.8rem !important;
+        }
+
+        >div:last-child {
+            display: flex;
+            border: none;
+
+            .left,
+            .right {
+                flex: 1;
+            }
+
+            .left {
+                margin-right: .1rem;
+            }
+        }
+
+    }
+}
+
+/*   左板块---- */
+.weather {
+    .today-weather {
+        display: flex;
+        height: 1.56rem;
+        margin: 1.04rem 0rem;
+
+        .left {
+            flex: 2;
+            text-align: right;
+
+            i {
+                font-size: 1.04rem;
+                color: #ffffff;
+            }
+
+            h3 {
+                font-size: .21rem;
+            }
+        }
+
+        .right {
+            flex: 4;
+            font-size: .21rem;
+            margin-left: .42rem;
+
+            p {
+                height: .42rem;
+                line-height: .42rem;
+
+                &:nth-child(2n+1) span {
+                    color: #db3278;
+                    margin-left: .1rem;
+                }
+
+                &:nth-child(2n) span {
+                    color: #109980;
+                    margin-left: .1rem;
+                }
+            }
+
+        }
+
+    }
+
+    .future-weather {
+        height: 1.98rem;
+
+        ul {
+            display: flex;
+
+            li {
+                height: 1.56rem;
+                flex: 2;
+                display: flex;
+
+                .left {
+                    text-align: right;
+                    flex: 1;
+
+                    i {
+                        font-size: .73rem;
+                        color: #ffffff;
+                    }
+
+                    h3 {
+                        font-size: .21rem;
+                    }
+                }
+
+                .right {
+                    flex: 2;
+                    font-size: .21rem;
+                    margin-left: .42rem;
+
+                    p {
+                        height: .42rem;
+                        line-height: .42rem;
+                        // color: #109980;
+
+                        &:nth-child(2n+1) span {
+                            color: #db3278;
+                            margin-left: .1rem;
+                        }
+
+                        &:nth-child(2n) span {
+                            color: #109980;
+                            margin-left: .1rem;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}
+
+/*   右板块----环境质量 */
+.environment {
+    .title {
+        li {
+            height: .42rem;
+            display: flex;
+            text-align: center;
+
+            div {
+                flex: 1;
+            }
+        }
+    }
+
+    .info-list {
+        // height: 1.4rem !important;
+
+        li {
+            height: .42rem;
+            line-height: .42rem;
+            display: flex;
+            text-align: center;
+
+            div {
+                flex: 1;
+                margin: 0 5px;
+
+                &:nth-child(2) {
+                    border-bottom: 1px solid #70339f;
+                    color: #70339f;
+                }
+
+                &:nth-child(3) {
+                    border-bottom: 1px solid #ff8a15;
+                    color: #ff8a15;
+                }
+
+                &:nth-child(4) {
+                    border-bottom: 1px solid #4eab0d;
+                    color: #4eab0d;
+                }
+
+                &:nth-child(5) {
+                    border-bottom: 1px solid #ff5252;
+                    color: #ff5252;
+                }
+
+                &:nth-child(6) {
+                    border-bottom: 1px solid #01aaed;
+                    color: #01aaed;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧工地可视化大数据监控平台--综合监控</title>
+    <!-- 引入fonts字体图标样式文件 -->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <!-- 页面头部区域 -->
+    <div class="header">
+        <div class="title">智慧工地可视化大数据监控平台</div>
+        <div class="nav">
+            <ul>
+                <li class="on"><a href="index.html">综合监控</a></li>
+                <li><a href="energy.html">能耗监控</a></li>
+                <li><a href="space.html">空间环境</a></li>
+            </ul>
+        </div>
+        <div class="fun-block">
+            <div class="date showTime"></div>
+            <div class="tq">
+                <div class="iconfont">&#xe678;</div>
+                <div class="number">
+                    <span> 25-30℃</span>
+                    <span> 多云</span>
+                </div>
+            </div>
+            <div class="recovery">
+                <div class="iconfont">&#xe676;</div>
+                <div class="huifu">
+                    恢复
+                </div>
+            </div>
+            <div class="configure">
+                <div class="iconfont">&#xe630;</div>
+                <div class="huifu">
+                    配置
+                </div>
+            </div>
+            <div class="quit">
+                <div class="iconfont">&#xe636;</div>
+                <div class="huifu">
+                    退出
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面内容区域 -->
+    <div class="main">
+        <!-- 左板块 -->
+        <div class="column">
+            <!-- 左板块----园区概览 -->
+            <div class="panel overview">
+                <h3>工地概览</h3>
+                <div class="info-list">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe600;</i>
+                            </div>
+
+                            <div class="txt">
+                                企业数量
+                                    <p id="companyNumber">1920<span>家</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe62c;</i>
+                            </div>
+                            <div class="txt">
+                                入驻企业
+                                    <p id="dettledCompanyNumber">1872<span>家</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe601;</i>
+                            </div>
+                            <div class="txt">
+                                从业人数
+                                    <p id="engagedPeopleNumber">23685<span>人</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe749;</i>
+                            </div>
+                            <div class="txt">
+                                占地面积
+                                    <p id="constructionAndErea">3500<span>公顷</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe602;</i>
+                            </div>
+                            <div class="txt">
+                                建设用地
+                                    <p id="constructionErea">1690<span>公顷</span></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe912;</i>
+                            </div>
+                            <div class="txt">
+                                建筑面积
+                                    <p id="coveredArea">2890<span>公顷</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 实时车位 -->
+            <div class="panel parking">
+                <h3>实时车位</h3>
+                <div class="info-list">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe604;</i>
+                            </div>
+
+                            <div class="txt">
+                                车场数
+                                <p id="parkingNumber">5141</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe604;</i>
+                            </div>
+
+                            <div class="txt">
+                                道闸数
+                                <p id="gatesNumber">4321</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe604;</i>
+                            </div>
+
+                            <div class="txt">
+                                车位数
+                                <p id="parkingSpace">16506</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe604;</i>
+                            </div>
+
+                            <div class="txt">
+                                进场数
+                                <p id="entryNumber">13540</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe604;</i>
+                            </div>
+
+                            <div class="txt">
+                                出场数
+                                <p id="outNumber">11540</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont">&#xe604;</i>
+                            </div>
+
+                            <div class="txt">
+                                场内车
+                                <p id="vehiclesNumber">15908</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 入驻企业 -->
+            <div class="panel settle">
+                <h3>入驻企业</h3>
+                <div class="info-list" id="settle-in"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 资产统计 -->
+            <div class="panel assets ">
+                <h3>资产统计</h3>
+                <div class="info-list">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont" style="color: #4ed33c">&#xe940;</i>
+                            </div>
+                            <div class="txt">
+                                总产值
+                                <p><span id="totalAssets">540</span>亿</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont" style="color: #dd5050">&#xe940;</i>
+                            </div>
+                            <div class="txt">
+                                总投资
+                                <p><span id="totalInvestment">600</span>亿</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont" style="color: #01aaed">&#xe940;</i>
+                            </div>
+                            <div class="txt">
+                                总净利
+                                <p><span id="totalNetProfit">340</span>亿</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="icon">
+                                <i class="iconfont" style="color: #6648ff">&#xe940;</i>
+                            </div>
+                            <div class="txt">
+                                总税收
+                                <p><span id="totalRevenue">140</span>亿</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <!-- 中板块 -->
+        <div class="column">
+            <!-- 实时监控 -->
+            <div class="panel screen">
+                <img src="img/img01.webp" alt="">
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 安防设备与新闻 -->
+            <div class="panels security">
+                <div class="left panel">
+                    <h3>安防设备 </h3>
+                    <div class="security-list info-list">
+                        <div>
+                            <i class="iconfont">&#xe61a;</i>
+                            <img src="img/1.jpeg" alt="">
+                        </div>
+                        <div>
+                            <i class="iconfont">&#xe61a;</i>
+                            <img src="img/2.jpeg" alt="">
+                        </div>
+                        <div>
+                            <i class="iconfont">&#xe61a;</i>
+                            <img src="img/1.jpeg" alt="">
+                        </div>
+                        <div>
+                            <i class="iconfont">&#xe61a;</i>
+                            <img src="img/2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+
+                <div class="right panel">
+                    <h3>安防新闻 </h3>
+                    <div class="info-list marquee-view">
+                        <ul id="marquee" class="marquee">
+                            <!--<li>
+                                <div class="title">新闻标题</div>
+                                <div class="times">15:30</div>
+                                <div class="status processed">已处理</div>
+                            </li>
+                            <li>
+                                <div class="title">新闻标题</div>
+                                <div class="times">15:30</div>
+                                <div class="status pending">待处理</div>
+                            </li>
+                            <li>
+                                <div class="title">新闻标题</div>
+                                <div class="times">15:30</div>
+                                <div class="status pending">待处理</div>
+                            </li>
+                            <li>
+                                <div class="title">新闻标题</div>
+                                <div class="times">15:30</div>
+                                <div class="status pending">待处理</div>
+                            </li>
+                            <li>
+                                <div class="title">新闻标题</div>
+                                <div class="times">15:30</div>
+                                <div class="status">已处理</div>
+                            </li>
+                            <li>
+                                <div class="title">新闻标题</div>
+                                <div class="times">15:30</div>
+                                <div class="status">已处理</div>
+                            </li>
+                            <li>
+                                <div class="title">新闻标题</div>
+                                <div class="times">15:30</div>
+                                <div class="status">已处理</div>
+                            </li>
+                            <li>
+                                <div class="title">新闻标题</div>
+                                <div class="times">15:30</div>
+                                <div class="status">已处理</div>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右板块 -->
+        <div class="column">
+            <!-- 滚动新闻 -->
+            <div class="panel news">
+                <h3>滚动新闻</h3>
+                <div class="info-list marquee-view">
+                    <ul id="marquee1" class="marquee">
+                        <!--<li>
+                            <div class="title">新闻标题</div>
+                            <div class="times">15:30</div>
+                            <div class="status processed">已处理</div>
+                        </li>
+                        <li>
+                            <div class="title">新闻标题</div>
+                            <div class="times">15:30</div>
+                            <div class="status pending">待处理</div>
+                        </li>
+                        <li>
+                            <div class="title">新闻标题</div>
+                            <div class="times">15:30</div>
+                            <div class="status pending">待处理</div>
+                        </li>
+                        <li>
+                            <div class="title">新闻标题</div>
+                            <div class="times">15:30</div>
+                            <div class="status pending">待处理</div>
+                        </li>
+                        <li>
+                            <div class="title">新闻标题</div>
+                            <div class="times">15:30</div>
+                            <div class="status">已处理</div>
+                        </li>
+                        <li>
+                            <div class="title">新闻标题</div>
+                            <div class="times">15:30</div>
+                            <div class="status">已处理</div>
+                        </li>
+                        <li>
+                            <div class="title">新闻标题</div>
+                            <div class="times">15:30</div>
+                            <div class="status">已处理</div>
+                        </li>
+                        <li>
+                            <div class="title">新闻标题</div>
+                            <div class="times">15:30</div>
+                            <div class="status">已处理</div>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 环境质量 -->
+            <div class="panel environment">
+                <h3>环境质量</h3>
+                <div class="title">
+                    <ul>
+                        <li>
+                            <div>检测点</div>
+                            <div>温度（℃）</div>
+                            <div>PM2.5</div>
+                            <div>湿度（%）</div>
+                            <div>噪音（dB）</div>
+                            <div>风速（m/s）</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-list marquee-view">
+                    <ul class="marquee">
+                        <li>
+                            <div>检测点1</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点2</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点3</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点4</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点5</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点6</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点7</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点8</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                        <li>
+                            <div>检测点9</div>
+                            <div>30</div>
+                            <div>40%</div>
+                            <div>35</div>
+                            <div>90</div>
+                            <div>10</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 天气情况 -->
+            <div class="panel">
+                <h3>天气情况</h3>
+                <div class="info-list" id="temperature"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 工地岗位人员统计 -->
+            <div class="panel">
+                <h3>人员配置</h3>
+                <div class="info-list" id="engineering-vehicle"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面适配插件 -->
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

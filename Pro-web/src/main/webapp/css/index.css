@@ -1,0 +1,274 @@
+.main .column:nth-child(2) {
+  flex: 2;
+}
+.main .column:nth-child(2) > div:first-child {
+  height: 7.64rem;
+}
+.main .column:nth-child(2) > div:last-child {
+  display: flex;
+  border: none;
+}
+.main .column:nth-child(2) > div:last-child .left,
+.main .column:nth-child(2) > div:last-child .right {
+  flex: 1;
+}
+.main .column:nth-child(2) > div:last-child .left {
+  margin-right: 0.1rem;
+}
+/*   左板块----园区概览 */
+.overview ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 100%;
+}
+.overview ul li {
+  width: 1.3rem;
+}
+.overview ul li .icon {
+  float: left;
+  width: 0.48rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  background-color: #4d4d4d;
+  text-align: center;
+}
+.overview ul li .icon .iconfont {
+  font-size: 0.25rem;
+}
+.overview ul li:nth-child(1) .iconfont {
+  color: #9689ff;
+}
+.overview ul li:nth-child(2) .iconfont {
+  color: #ff8a26;
+}
+.overview ul li:nth-child(3) .iconfont {
+  color: #4ed33c;
+}
+.overview ul li:nth-child(4) .iconfont {
+  color: #dd5050;
+}
+.overview ul li:nth-child(5) .iconfont {
+  color: #01aaed;
+}
+.overview ul li:nth-child(6) .iconfont {
+  color: #6648ff;
+}
+.overview ul li .txt {
+  float: left;
+  margin-left: 0.1rem;
+  font-size: 0.17rem;
+}
+.overview ul li .txt p span {
+  font-size: 0.15rem;
+}
+/*   左板块----实时车位 */
+.parking ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 100%;
+}
+.parking ul li {
+  width: 1.3rem;
+}
+.parking ul li .icon {
+  float: left;
+  width: 0.48rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.parking ul li .icon .iconfont {
+  font-size: 0.25rem;
+}
+.parking ul li:nth-child(1) .iconfont {
+  color: #9689ff;
+}
+.parking ul li:nth-child(2) .iconfont {
+  color: #ff8a26;
+}
+.parking ul li:nth-child(3) .iconfont {
+  color: #4ed33c;
+}
+.parking ul li:nth-child(4) .iconfont {
+  color: #dd5050;
+}
+.parking ul li:nth-child(5) .iconfont {
+  color: #01aaed;
+}
+.parking ul li:nth-child(6) .iconfont {
+  color: #6648ff;
+}
+.parking ul li .txt {
+  float: left;
+  margin-left: 0.1rem;
+  font-size: 0.17rem;
+}
+.parking ul li .txt p span {
+  font-size: 0.15rem;
+}
+/*   左板块----入驻企业 */
+/*   左板块----资产统计 */
+.assets ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 100%;
+}
+.assets ul li {
+  width: 2.08rem;
+}
+.assets ul li .icon {
+  float: left;
+  width: 0.63rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  background-color: #4d4d4d;
+  text-align: center;
+  margin: 0 0.21rem;
+}
+.assets ul li .icon .iconfont {
+  font-size: 34px;
+}
+.assets ul li .txt {
+  float: left;
+  margin-left: 0.1rem;
+  font-size: 0.21rem;
+}
+.assets ul li .txt p span {
+  font-size: 0.25rem;
+}
+/*   中板块----实时监控 */
+.screen {
+  height: 7.6rem;
+}
+.screen img {
+  width: 100%;
+  height: 100%;
+}
+/*   中板块----安防设备与安防新闻 */
+.security .left {
+  margin-right: 0.21rem;
+}
+.security .left .security-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.security .left .security-list div {
+  width: 2.16rem;
+  height: 0.9rem;
+  position: relative;
+}
+.security .left .security-list div i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.15rem;
+  margin-top: -0.15rem;
+  font-size: 0.42rem;
+}
+.security .left .security-list div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.05rem;
+}
+.security .right .info-list li {
+  height: 0.42rem;
+  line-height: 0.42rem;
+  display: flex;
+  padding: 0rem 0.1rem;
+}
+.security .right .info-list li .title {
+  flex: 3;
+}
+.security .right .info-list li .times {
+  flex: 2;
+}
+.security .right .info-list li .status {
+  flex: 1;
+}
+.security .right .info-list li .processed {
+  color: green;
+}
+.security .right .info-list li .pending {
+  color: red;
+}
+.security .right .info-list li:nth-child(2n) {
+  background-color: #1a1a1a;
+  border-radius: 0.05rem;
+}
+/*   右板块----滚动新闻 */
+.news .info-list li {
+  height: 0.42rem;
+  line-height: 0.42rem;
+  display: flex;
+  padding: 0rem 0.1rem;
+}
+.news .info-list li .title {
+  flex: 3;
+}
+.news .info-list li .times {
+  flex: 1;
+}
+.news .info-list li .status {
+  flex: 1;
+}
+.news .info-list li .processed {
+  color: green;
+}
+.news .info-list li .pending {
+  color: red;
+}
+.news .info-list li:nth-child(2n) {
+  background-color: #1a1a1a;
+  border-radius: 0.05rem;
+}
+/*   右板块----环境质量 */
+.environment .title li {
+  height: 0.42rem;
+  display: flex;
+  text-align: center;
+}
+.environment .title li div {
+  flex: 1;
+}
+.environment .info-list {
+  height: 1.4rem !important;
+}
+.environment .info-list li {
+  height: 0.42rem;
+  line-height: 0.42rem;
+  display: flex;
+  text-align: center;
+}
+.environment .info-list li div {
+  flex: 1;
+  margin: 0 5px;
+}
+.environment .info-list li div:nth-child(2) {
+  border-bottom: 1px solid #70339f;
+  color: #70339f;
+}
+.environment .info-list li div:nth-child(3) {
+  border-bottom: 1px solid #ff8a15;
+  color: #ff8a15;
+}
+.environment .info-list li div:nth-child(4) {
+  border-bottom: 1px solid #4eab0d;
+  color: #4eab0d;
+}
+.environment .info-list li div:nth-child(5) {
+  border-bottom: 1px solid #ff5252;
+  color: #ff5252;
+}
+.environment .info-list li div:nth-child(6) {
+  border-bottom: 1px solid #01aaed;
+  color: #01aaed;
+}

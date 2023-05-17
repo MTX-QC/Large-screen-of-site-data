@@ -1,0 +1,59 @@
+/*清除元素默认的内外边距  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: .17rem;
+}
+
+/*让所有斜体 不倾斜*/
+em,
+i {
+    font-style: normal;
+}
+
+/*去掉列表前面的小点*/
+li {
+    list-style: none;
+}
+
+/*图片没有边框   去掉图片底侧的空白缝隙*/
+img {
+    border: 0;
+    /*ie6*/
+    vertical-align: middle;
+}
+
+/*让button 按钮 变成小手*/
+button {
+    cursor: pointer;
+}
+
+/*取消链接的下划线*/
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333333;
+}
+
+/* 实现rem适配 */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 50px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 96px !important;
+    }
+}
+
+body {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: auto;
+}

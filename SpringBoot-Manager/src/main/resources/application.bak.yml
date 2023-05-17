@@ -1,0 +1,19 @@
+#指定日志配置文件
+logging:
+  config: classpath:logback-demo1.xml
+#激活某个环境
+spring:
+  profiles:
+    active: dev
+  #数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/scsm-sys-db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+server:
+  port: 8000
+mybatis-plus:
+  type-aliases-package: com.suke.pojo
+  mapper-locations: classpath*:mapper/*Mapper.xml
+debug: true

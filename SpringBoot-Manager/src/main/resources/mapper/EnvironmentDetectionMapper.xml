@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 命名空间:
+    写的是: 对应的Mapper接口的全限定名(Mapper接口的包名.类名)
+-->
+ <mapper namespace="com.suke.mapper.EnvironmentDetectionMapper">
+
+   <select id="getCheckTime" resultType="java.util.Date">
+       SELECT check_time FROM tb_environment_detection;
+   </select>
+
+    <select id="getWindSpeedByCheckTime" parameterType="date" resultType="Integer">
+        SELECT wind_speed
+        FROM  tb_environment_detection
+        WHERE check_time=#{checkTime};
+
+    </select>
+
+    <select id="getTemperatureByCheckTime" parameterType="date" resultType="Double">
+        SELECT temperature
+        FROM  tb_environment_detection
+        WHERE check_time=#{checkTime};
+
+    </select>
+    <select id="getPm25ByCheckTime" parameterType="date" resultType="Double">
+        SELECT pm25
+        FROM  tb_environment_detection
+        WHERE check_time=#{checkTime};
+
+    </select>
+    <select id="getHumidityInfoByCheckTime" parameterType="date" resultType="Double">
+        SELECT humidity
+        FROM  tb_environment_detection
+        WHERE check_time=#{checkTime};
+    </select>
+
+    <resultMap id="rm" type="com.suke.pojo.EnvironmentDetection">
+<!--        <result column="name" property="name"></result>-->
+        <result column="temperature" property="temperature"></result>
+        <result column="pm25" property="pm25"></result>
+        <result column="humidity" property="humidity"></result>
+        <result column="noise" property="noise"></result>
+        <result column="wind_speed" property="windSpeed"></result>
+
+        <association property="checkPoint" javaType="com.suke.pojo.CheckPoint">
+            <result column="name" property="name"></result>
+        </association>
+    </resultMap>
+
+    <select id="getEnvironment" resultMap="rm">
+        SELECT cp.name, e.temperature, e.pm25, e.humidity, e.noise, e.wind_speed
+        FROM tb_environment_detection e,
+             tb_check_point cp
+        WHERE e.cid = cp.id;
+
+    </select>
+</mapper>

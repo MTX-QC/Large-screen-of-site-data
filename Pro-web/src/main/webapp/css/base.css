@@ -1,0 +1,159 @@
+/* 页面头部区域 */
+.header {
+  height: 0.69rem;
+  border-bottom: 1px solid #109980;
+  display: flex;
+  color: #fff;
+  padding: 0.2rem;
+}
+.header .nav {
+  flex: 1;
+  display: flex;
+}
+.header .nav ul li {
+  float: left;
+  margin: 0rem 0.1rem;
+  width: 0.94rem;
+  height: 0.35rem;
+  border-radius: 0.05rem;
+  line-height: 0.35rem;
+  text-align: center;
+  font-size: 0.17rem;
+  background-color: #4d4d4d;
+}
+.header .nav ul li:hover,
+.header .nav ul li.on {
+  cursor: pointer;
+  background-color: #109980;
+}
+.header .nav ul li a {
+  color: #fff;
+}
+.header .fun-block {
+  width: 4.9rem;
+  display: flex;
+}
+.header .fun-block .date {
+  flex: 3;
+}
+.header .fun-block .date div:first-child {
+  font-size: 0.2rem;
+  color: #109980;
+}
+.header .fun-block .date div:last-child {
+  font-size: 0.13rem;
+  color: #fff;
+}
+.header .fun-block .tq {
+  flex: 2;
+  text-align: center;
+}
+.header .fun-block .tq .iconfont {
+  float: left;
+  font-size: 0.4rem;
+  color: #fff;
+}
+.header .fun-block .tq .number {
+  float: left;
+  text-align: center;
+}
+.header .fun-block .tq .number span {
+  display: block;
+}
+.header .fun-block .recovery,
+.header .fun-block .configure,
+.header .fun-block .quit {
+  flex: 1;
+  text-align: center;
+}
+.header .fun-block .recovery .iconfont,
+.header .fun-block .configure .iconfont,
+.header .fun-block .quit .iconfont {
+  font-size: 0.2rem;
+}
+.header .title {
+  width: 5rem;
+  font-size: 0.31rem;
+}
+/* 页面内容区域 */
+.main {
+  display: flex;
+}
+.main .column {
+  flex: 1;
+  margin: 0.1rem;
+}
+.main .column .panel {
+  height: 2.48rem;
+  border: 1px solid #109980;
+  margin-bottom: 0.1rem;
+  position: relative;
+  padding: 0.1rem;
+}
+.main .column .panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0.1rem;
+  height: 0.1rem;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+.main .column .panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 0.1rem;
+  height: 0.1rem;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+.main .column .panel .panel-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+}
+.main .column .panel .panel-footer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.main .column .panel .panel-footer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.main .column .panel h3 {
+  padding-bottom: 10px;
+}
+.main .column .panel .info-list {
+  height: 1.88rem;
+  overflow: hidden;
+}
+/* 通过CSS3动画滚动marquee */
+.marquee-view .marquee {
+  animation: move 15s linear infinite;
+  /* 鼠标经过marquee 就停止动画 */
+}
+.marquee-view .marquee:hover {
+  animation-play-state: paused;
+}
+@keyframes move {
+  100% {
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery的入门案例</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    第一个数：<input type="text" id="numA"/>+
+    第二个数：<input type="text" id="numB"/> <span id="total"></span>
+
+<br/>
+    <input type="button" value="求和" id="btn">
+
+<script type="text/javascript">
+    //页面加载完毕
+    $(function () {
+        //给求和按钮 添加一个click事件
+        $("#btn").click(function () {
+            //1 获取numA numB的值
+                var numA= $("#numA").val();
+                var numB= $("#numB").val();
+            //2 完成两个数相加--->得到和
+                var a= parseInt(numA);
+                var b= parseInt(numB);
+                var result= a+b;
+            //3 将和进行赋值
+                $("#total").html(result);
+        });
+    })
+
+
+</script>
+
+</body>
+</html>

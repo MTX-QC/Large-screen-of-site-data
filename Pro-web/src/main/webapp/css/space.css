@@ -1,0 +1,135 @@
+.main .panel {
+  height: 3.35rem !important;
+}
+.main .panel .info-list {
+  height: 2.2rem !important;
+}
+.main .column:first-child {
+  flex: 2;
+}
+.main .column:first-child > div:first-child {
+  height: 6.8rem !important;
+}
+.main .column:first-child > div:last-child {
+  display: flex;
+  border: none;
+}
+.main .column:first-child > div:last-child .left,
+.main .column:first-child > div:last-child .right {
+  flex: 1;
+}
+.main .column:first-child > div:last-child .left {
+  margin-right: 0.1rem;
+}
+/*   左板块---- */
+.weather .today-weather {
+  display: flex;
+  height: 1.56rem;
+  margin: 1.04rem 0rem;
+}
+.weather .today-weather .left {
+  flex: 2;
+  text-align: right;
+}
+.weather .today-weather .left i {
+  font-size: 1.04rem;
+  color: #ffffff;
+}
+.weather .today-weather .left h3 {
+  font-size: 0.21rem;
+}
+.weather .today-weather .right {
+  flex: 4;
+  font-size: 0.21rem;
+  margin-left: 0.42rem;
+}
+.weather .today-weather .right p {
+  height: 0.42rem;
+  line-height: 0.42rem;
+}
+.weather .today-weather .right p:nth-child(2n+1) span {
+  color: #db3278;
+  margin-left: 0.1rem;
+}
+.weather .today-weather .right p:nth-child(2n) span {
+  color: #109980;
+  margin-left: 0.1rem;
+}
+.weather .future-weather {
+  height: 1.98rem;
+}
+.weather .future-weather ul {
+  display: flex;
+}
+.weather .future-weather ul li {
+  height: 1.56rem;
+  flex: 2;
+  display: flex;
+}
+.weather .future-weather ul li .left {
+  text-align: right;
+  flex: 1;
+}
+.weather .future-weather ul li .left i {
+  font-size: 0.73rem;
+  color: #ffffff;
+}
+.weather .future-weather ul li .left h3 {
+  font-size: 0.21rem;
+}
+.weather .future-weather ul li .right {
+  flex: 2;
+  font-size: 0.21rem;
+  margin-left: 0.42rem;
+}
+.weather .future-weather ul li .right p {
+  height: 0.42rem;
+  line-height: 0.42rem;
+}
+.weather .future-weather ul li .right p:nth-child(2n+1) span {
+  color: #db3278;
+  margin-left: 0.1rem;
+}
+.weather .future-weather ul li .right p:nth-child(2n) span {
+  color: #109980;
+  margin-left: 0.1rem;
+}
+/*   右板块----环境质量 */
+.environment .title li {
+  height: 0.42rem;
+  display: flex;
+  text-align: center;
+}
+.environment .title li div {
+  flex: 1;
+}
+.environment .info-list li {
+  height: 0.42rem;
+  line-height: 0.42rem;
+  display: flex;
+  text-align: center;
+}
+.environment .info-list li div {
+  flex: 1;
+  margin: 0 5px;
+}
+.environment .info-list li div:nth-child(2) {
+  border-bottom: 1px solid #70339f;
+  color: #70339f;
+}
+.environment .info-list li div:nth-child(3) {
+  border-bottom: 1px solid #ff8a15;
+  color: #ff8a15;
+}
+.environment .info-list li div:nth-child(4) {
+  border-bottom: 1px solid #4eab0d;
+  color: #4eab0d;
+}
+.environment .info-list li div:nth-child(5) {
+  border-bottom: 1px solid #ff5252;
+  color: #ff5252;
+}
+.environment .info-list li div:nth-child(6) {
+  border-bottom: 1px solid #01aaed;
+  color: #01aaed;
+}

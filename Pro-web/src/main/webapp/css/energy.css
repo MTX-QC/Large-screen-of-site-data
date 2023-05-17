@@ -1,0 +1,110 @@
+.main .panel {
+  height: 4.4rem !important;
+}
+.main .panel .info-list {
+  height: 3.75rem !important;
+}
+/*panel-top组件样式*/
+.panel-top {
+  height: 1.15rem;
+  padding: 0.1rem 0.21rem;
+  border: 1px solid #109980;
+  margin: 0.1rem;
+}
+.panel-top ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  padding: 0.21rem 0rem;
+  height: 1.8rem;
+}
+.panel-top ul li {
+  width: 2rem;
+}
+.panel-top ul li .icon {
+  float: left;
+  width: 0.63rem;
+  height: 0.63rem;
+  line-height: 0.6rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.panel-top ul li .icon .iconfont {
+  font-size: 0.25rem;
+  color: #fff;
+}
+.panel-top ul li:nth-child(1) .icon {
+  background-color: #9689ff;
+}
+.panel-top ul li:nth-child(2) .icon {
+  background-color: #ff8a26;
+}
+.panel-top ul li:nth-child(3) .icon {
+  background-color: #4ed33c;
+}
+.panel-top ul li:nth-child(4) .icon {
+  background-color: #dd5050;
+}
+.panel-top ul li:nth-child(5) .icon {
+  background-color: #01aaed;
+}
+.panel-top ul li:nth-child(6) .icon {
+  background-color: #6648ff;
+}
+.panel-top ul li .txt {
+  float: left;
+  margin-left: 0.1rem;
+  font-size: 0.17rem;
+}
+.panel-top ul li .txt p span {
+  font-size: 0.15rem;
+}
+/* 今日分区耗电 */
+.partition-power {
+  height: 4.48rem;
+}
+.partition-power h3 {
+  font-size: 0.17rem;
+  font-weight: normal;
+}
+.partition-power ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 0.21rem 0rem;
+  height: 4.17rem;
+}
+.partition-power ul li {
+  width: 2rem;
+  font-size: 0.15rem;
+  text-align: center;
+  background-color: #109980;
+  margin: 0 0.1rem;
+  border-radius: 5px;
+}
+.partition-power ul li p {
+  font-size: 0.31rem;
+}
+.partition-power ul li p span {
+  font-size: 0.15rem;
+}
+.partition-power ul li:nth-child(1) {
+  background-color: #9689ff;
+}
+.partition-power ul li:nth-child(2) {
+  background-color: #ff8a26;
+}
+.partition-power ul li:nth-child(3) {
+  background-color: #4ed33c;
+}
+.partition-power ul li:nth-child(4) {
+  background-color: #dd5050;
+}
+.partition-power ul li:nth-child(5) {
+  background-color: #01aaed;
+}
+.partition-power ul li:nth-child(6) {
+  background-color: #6648ff;
+}

@@ -1,0 +1,76 @@
+.main {
+    .panel {
+        height: 3.35rem !important;
+
+        .info-list {
+            height: 2.8rem !important;
+        }
+    }
+
+
+    .column:nth-child(2) {
+        flex: 2;
+
+        >div:first-child {
+            height: 6.8rem !important;
+        }
+
+        >div:last-child {
+            display: flex;
+            border: none;
+
+            .left,
+            .right {
+                flex: 1;
+            }
+
+            .left {
+                margin-right: .1rem;
+            }
+        }
+
+    }
+}
+
+/*   左板块----资产情况概览 */
+.assets {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        height: 100%;
+
+        li {
+            width: 2.08rem;
+
+            .icon {
+                float: left;
+                width: .63rem;
+                height: .68rem;
+                line-height: .68rem;
+                background-color: #4d4d4d;
+                text-align: center;
+                margin: 0 .21rem;
+
+                .iconfont {
+                    font-size: 34px;
+                }
+            }
+
+            .txt {
+                float: left;
+                margin-left: .1rem;
+                font-size: .21rem;
+
+                p {
+                    span {
+                        font-size: .25rem;
+                    }
+
+                }
+            }
+        }
+    }
+}

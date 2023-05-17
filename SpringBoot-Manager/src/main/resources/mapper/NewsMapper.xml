@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 命名空间:
+    写的是: 对应的Mapper接口的全限定名(Mapper接口的包名.类名)
+-->
+ <mapper namespace="com.suke.mapper.NewsMapper">
+
+   <select id="getAllAnFangNewsByInfo" resultType="com.suke.pojo.News">
+       SELECT * FROM tb_news;
+
+   </select>
+
+</mapper>

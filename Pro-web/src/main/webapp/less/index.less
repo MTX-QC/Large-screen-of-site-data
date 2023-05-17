@@ -1,0 +1,385 @@
+.main {
+    .column:nth-child(2) {
+        flex: 2;
+
+        >div:first-child {
+            height: 7.64rem;
+        }
+
+        >div:last-child {
+            display: flex;
+            border: none;
+
+            .left,
+            .right {
+                flex: 1;
+            }
+
+            .left {
+                margin-right: .1rem;
+            }
+        }
+
+    }
+}
+
+
+
+/*   左板块----园区概览 */
+.overview {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        height: 100%;
+
+        li {
+            width: 1.3rem;
+
+            .icon {
+                float: left;
+                width: .48rem;
+                height: .6rem;
+                line-height: .6rem;
+                background-color: #4d4d4d;
+                text-align: center;
+
+                .iconfont {
+                    font-size: .25rem;
+                }
+            }
+
+            &:nth-child(1) .iconfont {
+                color: #9689ff;
+            }
+
+            &:nth-child(2) .iconfont {
+                color: #ff8a26;
+            }
+
+            &:nth-child(3) .iconfont {
+                color: #4ed33c;
+            }
+
+            &:nth-child(4) .iconfont {
+                color: #dd5050;
+            }
+
+            &:nth-child(5) .iconfont {
+                color: #01aaed;
+            }
+
+            &:nth-child(6) .iconfont {
+                color: #6648ff;
+            }
+
+            .txt {
+                float: left;
+                margin-left: .1rem;
+                font-size: .17rem;
+
+                p {
+                    span {
+                        font-size: .15rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/*   左板块----实时车位 */
+.parking {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        height: 100%;
+
+        li {
+            width: 1.3rem;
+
+            .icon {
+                float: left;
+                width: .48rem;
+                height: .6rem;
+                line-height: .6rem;
+                text-align: center;
+
+                .iconfont {
+                    font-size: .25rem;
+                }
+            }
+
+            &:nth-child(1) .iconfont {
+                color: #9689ff;
+            }
+
+            &:nth-child(2) .iconfont {
+                color: #ff8a26;
+            }
+
+            &:nth-child(3) .iconfont {
+                color: #4ed33c;
+            }
+
+            &:nth-child(4) .iconfont {
+                color: #dd5050;
+            }
+
+            &:nth-child(5) .iconfont {
+                color: #01aaed;
+            }
+
+            &:nth-child(6) .iconfont {
+                color: #6648ff;
+            }
+
+            .txt {
+                float: left;
+                margin-left: .1rem;
+                font-size: .17rem;
+
+                p {
+                    span {
+                        font-size: .15rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+/*   左板块----入驻企业 */
+// .settle {}
+
+/*   左板块----资产统计 */
+.assets {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        height: 100%;
+
+        li {
+            width: 2.08rem;
+
+            .icon {
+                float: left;
+                width: .63rem;
+                height: .68rem;
+                line-height: .68rem;
+                background-color: #4d4d4d;
+                text-align: center;
+                margin: 0 .21rem;
+
+                .iconfont {
+                    font-size: 34px;
+                }
+            }
+
+            .txt {
+                float: left;
+                margin-left: .1rem;
+                font-size: .21rem;
+
+                p {
+                    span {
+                        font-size: .25rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/*   中板块----实时监控 */
+.screen {
+    height: 7.6rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*   中板块----安防设备与安防新闻 */
+.security {
+    .left {
+        margin-right: .21rem;
+
+        .security-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+
+            div {
+                width: 2.16rem;
+                height: .9rem;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -0.15rem;
+                    margin-top: -0.15rem;
+                    font-size: .42rem;
+
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: .05rem;
+                }
+            }
+        }
+
+    }
+
+    .right {
+
+        .info-list {
+
+            li {
+                height: .42rem;
+                line-height: .42rem;
+                display: flex;
+                padding: 0rem .1rem;
+
+                .title {
+                    flex: 3;
+                }
+
+                .times {
+                    flex: 1;
+                }
+
+                .status {
+                    flex: 1;
+                }
+
+                .processed {
+                    color: green;
+                }
+
+                .pending {
+                    color: red;
+                }
+            }
+
+            li:nth-child(2n) {
+                background-color: #1a1a1a;
+                border-radius: .05rem;
+            }
+        }
+    }
+}
+
+/*   右板块----滚动新闻 */
+.news {
+    .info-list {
+
+        li {
+            height: .42rem;
+            line-height: .42rem;
+            display: flex;
+            padding: 0rem .1rem;
+
+            .title {
+                flex: 3;
+            }
+
+            .times {
+                flex: 1;
+            }
+
+            .status {
+                flex: 1;
+            }
+
+            .processed {
+                color: green;
+            }
+
+            .pending {
+                color: red;
+            }
+        }
+
+        li:nth-child(2n) {
+            background-color: #1a1a1a;
+            border-radius: .05rem;
+        }
+    }
+
+}
+
+/*   右板块----环境质量 */
+.environment {
+    .title {
+        li {
+            height: .42rem;
+            display: flex;
+            text-align: center;
+
+            div {
+                flex: 1;
+            }
+        }
+    }
+
+    .info-list {
+        height: 1.4rem !important;
+
+        li {
+            height: .42rem;
+            line-height: .42rem;
+            display: flex;
+            text-align: center;
+
+            div {
+                flex: 1;
+                margin: 0 5px;
+
+                &:nth-child(2) {
+                    border-bottom: 1px solid #70339f;
+                    color: #70339f;
+                }
+
+                &:nth-child(3) {
+                    border-bottom: 1px solid #ff8a15;
+                    color: #ff8a15;
+                }
+
+                &:nth-child(4) {
+                    border-bottom: 1px solid #4eab0d;
+                    color: #4eab0d;
+                }
+
+                &:nth-child(5) {
+                    border-bottom: 1px solid #ff5252;
+                    color: #ff5252;
+                }
+
+                &:nth-child(6) {
+                    border-bottom: 1px solid #01aaed;
+                    color: #01aaed;
+                }
+            }
+        }
+    }
+}

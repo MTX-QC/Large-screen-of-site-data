@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧工地可视化大数据监控平台--能耗监控</title>
+    <!-- 引入fonts字体图标样式文件 -->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/energy.css">
+
+</head>
+
+<body>
+    <!-- 页面头部区域 -->
+    <div class="header">
+        <div class="title">智慧工地可视化大数据监控平台</div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">综合监控</a></li>
+                <li class="on"><a href="energy.html">能耗监控</a></li>
+                <li><a href="space.html">空间环境</a></li>
+            </ul>
+        </div>
+        <div class="fun-block">
+            <div class="date showTime"></div>
+            <div class="tq">
+                <div class="iconfont">&#xe678;</div>
+                <div class="number">
+                    <span> 25-30℃</span>
+                    <span> 多云</span>
+                </div>
+            </div>
+            <div class="recovery">
+                <div class="iconfont">&#xe676;</div>
+                <div class="huifu">
+                    恢复
+                </div>
+            </div>
+            <div class="configure">
+                <div class="iconfont">&#xe630;</div>
+                <div class="huifu">
+                    配置
+                </div>
+            </div>
+            <div class="quit">
+                <div class="iconfont">&#xe636;</div>
+                <div class="huifu">
+                    退出
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 综合统计 -->
+    <div class="panel-top">
+        <div class="charts">
+            <ul class="info-list">
+                <li>
+                    <div class="icon">
+                        <i class="iconfont">&#xeca1;</i>
+                    </div>
+
+                    <div class="txt">
+                        <p>28109<span>kw/h</span></p>
+                        本月用电
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="iconfont">&#xeca1;</i>
+                    </div>
+                    <div class="txt">
+                        <p>5094<span>kw/h</span></p>
+                        今日用电
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="iconfont">&#xeca1;</i>
+                    </div>
+                    <div class="txt">
+                        <p>4367<span>kw/h</span></p>
+                        昨日用电
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="iconfont">&#xeca1;</i>
+                    </div>
+                    <div class="txt">
+                        <p>55<span>上升</span></p>
+                        用电环比
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="iconfont">&#xeca2;</i>
+                    </div>
+                    <div class="txt">
+                        <p>109<span>吨</span></p>
+                        今日用水
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="iconfont">&#xeca2;</i>
+                    </div>
+                    <div class="txt">
+                        <p>47<span>下降</span></p>
+                        用水环比
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页面内容区域 -->
+    <div class="main">
+        <!-- 左板块 -->
+        <div class="column">
+            <!-- 左板块----今日用电概况 -->
+            <div class="panel">
+                <h3>今日用电概况(kw/h)</h3>
+                <div class="info-list" id="daily-electricity">
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 工地能耗走势 -->
+            <div class="panel ">
+                <h3>工地能耗走势(kw/h)</h3>
+                <div class="info-list" id="kwh"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <!-- 中间板块 -->
+        <div class="column">
+            <!-- 左板块----今日用电动态 -->
+            <div class="panel ">
+                <h3>今日用电动态</h3>
+                <div class="info-list" id="kwh3"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 用电时段统计 -->
+            <div class="panel ">
+                <h3>用电时段统计</h3>
+                <div class="info-list" id="kwh2"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <!-- 右板块 -->
+        <div class="column">
+            <!-- 今日分区耗电 -->
+            <div class="panel partition-power">
+                <h3>今日分区耗电</h3>
+                <div class="info-list">
+                    <ul>
+                        <li>
+                            <p>109<span>kw/h</span></p>
+                            A栋
+                        </li>
+                        <li>
+                            <p>109<span>kw/h</span></p>
+                            B栋
+                        </li>
+                        <li>
+                            <p>109<span>kw/h</span></p>
+                            C栋
+                        </li>
+                        <li>
+                            <p>109<span>kw/h</span></p>
+                            D栋
+                        </li>
+                        <li>
+                            <p>109<span>kw/h</span></p>
+                            E栋
+                        </li>
+                        <li>
+                            <p>109<span>kw/h</span></p>
+                            F栋
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <!-- 设备用电占比 -->
+            <div class="panel settle">
+                <h3>设备用电占比</h3>
+                <div class="info-list" id="equipment-power">
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面适配插件 -->
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/energy.js"></script>
+</body>
+
+</html>
